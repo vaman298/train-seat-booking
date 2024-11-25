@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+/* global_styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Style for seating rows and seats */
+  .seating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .seat.booked {
+    background-color: lightcoral;
+  }
+  
